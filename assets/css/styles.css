@@ -1,0 +1,217 @@
+:root {
+  --bg: #FFF5E1;
+  --accent-rose: #FFC0CB;
+  --accent-choco: #8B4513;
+  --text: #5D4037;
+  --text-muted: #B0BEC5;
+  --white: #fff;
+  --shadow: 0 10px 25px rgba(0, 0, 0, .08);
+  --radius: 16px;
+}
+
+
+* {
+  box-sizing: border-box
+}
+
+
+html,
+body {
+  margin: 0;
+  padding: 0
+}
+
+
+body {
+  font-family: Lato, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem
+}
+
+
+a {
+  color: var(--accent-choco);
+  text-decoration: none
+}
+
+
+img {
+  max-width: 100%;
+  display: block
+}
+
+
+.badge {
+  background: var(--accent-rose);
+  padding: .15rem .45rem;
+  border-radius: 999px;
+  font-size: .8rem
+}
+
+
+.header {
+  background: var(--white);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 10
+}
+
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .75rem 1rem
+}
+
+
+.header__brand {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-weight: 900;
+  color: var(--accent-choco)
+}
+
+
+.brand__name {
+  font-family: Pacifico, cursive;
+  font-size: 1.4rem
+}
+
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap
+}
+
+
+.nav__link {
+  padding: .5rem .75rem;
+  border-radius: 10px
+}
+
+
+.nav__link:hover {
+  background: var(--accent-rose)
+}
+
+
+.accion__link {
+  margin-left: .5rem
+}
+
+
+.accion__link--acento {
+  background: var(--accent-choco);
+  color: #fff;
+  padding: .4rem .75rem;
+  border-radius: 10px
+}
+
+
+.header__promocion {
+  background: var(--accent-rose);
+  text-align: center;
+  padding: .35rem 1rem;
+  font-weight: 700
+}
+
+
+.footer {
+  margin-top: 2rem;
+  background: var(--white)
+}
+
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 2rem 1rem
+}
+
+
+.footer__title {
+  margin: .25rem 0
+}
+
+
+.footer__text,
+.footer__link {
+  color: var(--text)
+}
+
+
+.footer__copy {
+  text-align: center;
+  padding: 1rem;
+  color: var(--text-muted);
+  border-top: 1px solid #eee
+}
+
+
+.main {
+  background: linear-gradient(180deg, rgba(255, 192, 203, .25), transparent)
+}
+
+
+.main__content {
+  padding: 3rem 1rem;
+  text-align: center
+}
+
+
+.main__content--title {
+  font-family: Pacifico, cursive;
+  font-size: 2.5rem;
+  margin: .25rem 0
+}
+
+
+.main__content--subtitle {
+  color: var(--text)
+}
+
+
+.btn {
+  display: inline-block;
+  padding: .65rem 1rem;
+  border-radius: 12px;
+  font-weight: 700;
+  border: 0;
+  cursor: pointer
+}
+
+
+.btn--primary {
+  background: var(--accent-choco);
+  color: #fff
+}
+
+
+.section {
+  padding: 1rem 0
+}
+
+
+.section__title {
+  font-size: 1.5rem;
+  margin: .25rem 0 1rem
+}
+
+
+.section__text {
+  color: var(--text)
+}
+
