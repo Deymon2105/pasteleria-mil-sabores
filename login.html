@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pastelería Mil Sabores</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+<body class="page page--auth">
+
+<header class="site-header">
+  <div class="site-header__top">
+    <a href="index.html" class="site-header__brand">
+      <span class="brand__logo" aria-hidden="true">🍰</span>
+      <span class="brand__name">Mil Sabores</span>
+    </a>
+    <nav class="site-header__nav nav">
+      <a class="nav__link" href="index.html">Inicio</a>
+      <a class="nav__link" href="catalog.html">Catálogo</a>
+      <a class="nav__link" href="blog.html">Blog</a>
+      <a class="nav__link" href="about.html">Historia</a>
+      <a class="nav__link" href="contact.html">Contacto</a>
+    </nav>
+    <div class="site-header__actions actions">
+      <a class="actions__link" href="login.html">Ingresar</a>
+      <a class="actions__link actions__link--accent" href="cart.html">Carrito <span id="header-cart-count" class="badge">0</span></a>
+    </div>
+  </div>
+  <div class="site-header__promo">¡Cumplimos 50 años y lo celebramos contigo!</div>
+</header>
+
+  <main class="container auth">
+    <section class="auth__card card">
+      <h1 class="card__title">Ingresar</h1>
+      <label class="form__field">Email
+        <input id="login-email" class="form__input" type="email" placeholder="tu@email.com">
+      </label>
+      <label class="form__field">Contraseña
+        <input id="login-pass" class="form__input" type="password" placeholder="••••••••">
+      </label>
+      <button id="login-btn" class="btn btn--primary">Entrar</button>
+      <p class="auth__hint">¿No tienes cuenta? <a href="register.html">Regístrate</a></p>
+    </section>
+  </main>
+
+<footer class="site-footer">
+  <div class="site-footer__grid">
+    <div class="site-footer__col">
+      <h4 class="site-footer__title">Sobre nosotros</h4>
+      <p class="site-footer__text">Desde 1975 endulzando Chile. Participantes del récord Guinness de la torta más grande (1995).</p>
+    </div>
+    <div class="site-footer__col">
+      <h4 class="site-footer__title">Enlaces</h4>
+      <ul class="site-footer__list">
+        <li><a class="site-footer__link" href="catalog.html">Catálogo</a></li>
+        <li><a class="site-footer__link" href="about.html">Historia</a></li>
+        <li><a class="site-footer__link" href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+    <div class="site-footer__col">
+      <h4 class="site-footer__title">Síguenos</h4>
+      <div class="site-footer__social social">
+        <a class="social__icon" href="#" aria-label="Instagram">📷</a>
+        <a class="social__icon" href="#" aria-label="Facebook">📘</a>
+        <a class="social__icon" href="#" aria-label="X">𝕏</a>
+      </div>
+    </div>
+  </div>
+  <div class="site-footer__copy">© 2025 Pastelería Mil Sabores</div>
+</footer>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+
+  <script src="assets/js/auth.js"></script>
+</body>
+</html>
