@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Admin | 1000 Sabores</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/styles.css">
+<link rel="stylesheet" href="../assets/css/admin.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/2.0.3/css/dataTables.dataTables.min.css">
+
+</head>
+<body class="admin admin--products">
+
+<header class="admin-header">
+  <a href="index.html" class="admin-header__brand">Admin 1000 Sabores</a>
+  <nav class="admin-header__nav">
+    <a class="admin-header__link" href="users.html">Usuarios</a>
+    <a class="admin-header__link" href="products.html">Productos</a>
+    <a class="admin-header__link" href="orders.html">Pedidos</a>
+  </nav>
+</header>
+
+  <main class="admin-main container">
+    <h1 class="page__title">Productos</h1>
+    <section class="card">
+      <h2 class="card__title">Listado</h2>
+      <div id="admin-products" class="product-grid"></div>
+    </section>
+  </main>
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/admin.js"></script>
+</body>
+</html>
