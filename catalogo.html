@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="assets/css/responsive.css">
 
 </head>
-<body class="page page--tracking">
+<body class="page page--catalog">
 
 <header class="site-header">
   <div class="site-header__top">
@@ -23,7 +23,7 @@
     </a>
     <nav class="site-header__nav nav">
       <a class="nav__link" href="index.html">Inicio</a>
-      <a class="nav__link" href="catalogo.html">Catálogo</a>
+      <a class="nav__link" href="catalog.html">Catálogo</a>
       <a class="nav__link" href="blog.html">Blog</a>
       <a class="nav__link" href="about.html">Historia</a>
       <a class="nav__link" href="contact.html">Contacto</a>
@@ -37,14 +37,26 @@
 </header>
 
   <main class="container">
-    <h1 class="page__title">Seguimiento de pedido</h1>
-    <div class="tracking">
-      <label class="form__field">Código de seguimiento
-        <input id="track-code" class="form__input" placeholder="EJ: PED-0001">
+    <h1 class="page__title">Catálogo</h1>
+    <div class="filters">
+      <label class="filters__item">Tipo
+        <select id="filter-type" class="filters__select">
+          <option value="">Todos</option>
+          <option value="Tortas Cuadradas">Tortas Cuadradas</option>
+          <option value="Tortas Circulares">Tortas Circulares</option>
+          <option value="Postres Individuales">Postres Individuales</option>
+          <option value="Productos Sin Azúcar">Productos Sin Azúcar</option>
+          <option value="Pastelería Tradicional">Pastelería Tradicional</option>
+          <option value="Productos Sin Gluten">Productos Sin Gluten</option>
+          <option value="Productos Vegana">Productos Vegana</option>
+          <option value="Tortas Especiales">Tortas Especiales</option>
+        </select>
       </label>
-      <button id="track-btn" class="btn btn--primary">Consultar</button>
-      <div id="track-result" class="tracking__result"></div>
+      <label class="filters__item">Buscar
+        <input id="search-input" class="filters__input" type="search" placeholder="Buscar producto...">
+      </label>
     </div>
+    <div id="catalog-grid" class="product-grid"></div>
   </main>
 
 <footer class="site-footer">
@@ -56,7 +68,7 @@
     <div class="site-footer__col">
       <h4 class="site-footer__title">Enlaces</h4>
       <ul class="site-footer__list">
-        <li><a class="site-footer__link" href="catalogo.html">Catálogo</a></li>
+        <li><a class="site-footer__link" href="catalog.html">Catálogo</a></li>
         <li><a class="site-footer__link" href="about.html">Historia</a></li>
         <li><a class="site-footer__link" href="blog.html">Blog</a></li>
       </ul>
@@ -75,6 +87,6 @@
 <script src="assets/js/data.js"></script>
 <script src="assets/js/app.js"></script>
 
-  <script src="assets/js/tracking.js"></script>
+  <script src="assets/js/catalog.js"></script>
 </body>
 </html>
