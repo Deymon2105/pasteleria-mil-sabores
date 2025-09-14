@@ -4,7 +4,7 @@
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Pastelería Mil Sabores</title>
+<title>Pastelería 1000 Sabores</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Pacifico&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="assets/css/responsive.css">
 
 </head>
-<body class="page page--auth">
+<body class="page page--product">
 
 <header class="site-header">
   <div class="site-header__top">
@@ -36,24 +36,8 @@
   <div class="site-header__promo">¡Cumplimos 50 años y lo celebramos contigo!</div>
 </header>
 
-  <main class="container auth">
-    <section class="auth__card card">
-      <h1 class="card__title">Registro</h1>
-      <label class="form__field">Nombre
-        <input id="reg-name" class="form__input" type="text" placeholder="Nombre y apellido">
-      </label>
-      <label class="form__field">Email
-        <input id="reg-email" class="form__input" type="email" placeholder="nombre@duoc.cl">
-      </label>
-      <label class="form__field">Fecha de nacimiento
-        <input id="reg-birthdate" class="form__input" type="date">
-      </label>
-      <label class="form__field">Contraseña
-        <input id="reg-pass" class="form__input" type="password">
-      </label>
-      <button id="register-btn" class="btn btn--primary">Crear cuenta</button>
-      <p class="auth__hint">¿Ya tienes cuenta? <a href="login.html">Ingresa</a></p>
-    </section>
+  <main class="container">
+    <div id="product-detail" class="product-detail"></div>
   </main>
 
 <footer class="site-footer">
@@ -65,7 +49,7 @@
     <div class="site-footer__col">
       <h4 class="site-footer__title">Enlaces</h4>
       <ul class="site-footer__list">
-        <li><a class="site-footer__link" href="catalogo.html">Catálogo</a></li>
+        <li><a class="site-footer__link" href="catalog.html">Catálogo</a></li>
         <li><a class="site-footer__link" href="about.html">Historia</a></li>
         <li><a class="site-footer__link" href="blog.html">Blog</a></li>
       </ul>
@@ -84,6 +68,6 @@
 <script src="assets/js/data.js"></script>
 <script src="assets/js/app.js"></script>
 
-  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/product.js"></script>
 </body>
 </html>
