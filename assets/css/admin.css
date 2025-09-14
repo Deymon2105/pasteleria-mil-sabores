@@ -1,0 +1,9 @@
+.admin {
+    background: #FFF5E1;
+    color: #5D4037
+}
+
+
+.admin .container {
+    max-width: 1200px
+}

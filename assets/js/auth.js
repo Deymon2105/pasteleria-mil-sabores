@@ -1,4 +1,4 @@
-// Registro/Ingreso sencillo en localStorage
+// Registro/login en localStorage
 function getUsers(){
   return JSON.parse(localStorage.getItem('users')||'[]');
 }
@@ -7,7 +7,7 @@ function setUsers(users){
 }
 
 document.addEventListener('DOMContentLoaded', ()=>{
-  // Seed demo users if empty
+ //si el usuario esta vacio
   if(getUsers().length===0){
     setUsers(AppData.users);
   }
