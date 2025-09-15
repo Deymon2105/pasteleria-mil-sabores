@@ -2,7 +2,7 @@
 window.AppData = {
   products:[
     {code:'TC001',category:'Tortas Cuadradas',name:'Torta Cuadrada de Chocolate',price:45000,desc:'Ganache y avellanas. Personalizable.',img:'assets/img/torta cuadrada chocolate.jpeg'},
-    {code:'TC002',category:'Tortas Cuadradas',name:'Torta Cuadrada de Frutas',price:50000,desc:'Frutas frescas y crema chantilly.',img:'assets/img/torta cuadrada de frutas.jpg'},
+    {code:'TC002',category:'Tortas Cuadradas',name:'Torta Cuadrada de Frutas',price:50000,desc:'Frutas frescas y crema chantilly.',img:'assets/img/torta-cuadrada-frutas.jpg'},
     {code:'TT001',category:'Tortas Circulares',name:'Torta Circular de Vainilla',price:40000,desc:'Bizcocho clásico con crema pastelera.',img:'assets/img/torta circular vainilla.jpg'},
     {code:'TT002',category:'Tortas Circulares',name:'Torta Circular de Manjar',price:42000,desc:'Manjar y nueces, tradición chilena.',img:'assets/img/torta circular de manjar.jpg'},
     {code:'PI001',category:'Postres Individuales',name:'Mousse de Chocolate',price:5000,desc:'Cremoso y suave.',img:'assets/img/mousse de manjar.jpg'},
