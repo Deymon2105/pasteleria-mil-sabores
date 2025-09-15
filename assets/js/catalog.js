@@ -11,7 +11,7 @@
     const data = AppData.products.filter(p=>(!type || p.category===type) && (!q || p.name.toLowerCase().includes(q)));
     grid.innerHTML = data.map(p=>`
       <article class="product-card card">
-        <div class="product-card__img">${p.emoji}</div>
+        <div class="product-card__img"><img src="${p.img}"></div>
         <h3 class="product-card__name">${p.name}</h3>
         <div class="product-card__meta"><span class="tag">${p.category}</span></div>
         <div class="product-card__price">${formatCLP(p.price)}</div>

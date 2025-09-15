@@ -48,7 +48,7 @@ function changeQty(code, delta){
   const featured = AppData.products.slice(0,4);
   cont.innerHTML = featured.map(p=>`
     <article class="product-card card">
-      <div class="product-card__img">${p.emoji}</div>
+      <div class="product-card__img"><img src="${p.img}"></div>
       <h3 class="product-card__name">${p.name}</h3>
       <div class="product-card__meta">
         <span class="tag">${p.category}</span>

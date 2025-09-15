@@ -6,7 +6,7 @@
   const code = params.get('code');
   const p = AppData.products.find(x=>x.code===code) || AppData.products[0];
   el.innerHTML = `
-    <div class="product-detail__img card">${p.emoji}</div>
+    <div class="product-detail__img card"><img src="${p.img}"></div>
     <div class="product-detail__info card">
       <h1 class="product-detail__name">${p.name}</h1>
       <p class="product-detail__desc">${p.desc}</p>
