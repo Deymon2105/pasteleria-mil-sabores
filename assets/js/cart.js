@@ -58,7 +58,7 @@ function renderCart(){
   });
   container.innerHTML = products.map(p=>`
     <div class="cart__item">
-      <div class="cart__thumb">${p.emoji}</div>
+      <div class="cart__thumb"><img src="${p.img}"></div>
       <div class="cart__info">
         <div class="cart__name">${p.name}</div>
         <div class="cart__meta"><span class="tag">${p.category}</span> · ${formatCLP(p.price)}</div>
